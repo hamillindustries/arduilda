@@ -28,7 +28,7 @@ void setup() {
 
 void draw() {
   background(0);
-  float an = gain*amp.analyze(); //Analize amplitude and apply digital gain
+  float an = gain*amp.analyze(); //Analyze amplitude and apply digital gain
 
   //Visualize amplitude:
   pg.beginDraw();
@@ -42,7 +42,7 @@ void draw() {
 
   //Visualize threshold line:
   stroke(0, 0, 225);
-  line(0, (1-threshold)*height, width, (1-threshold)*height); 
+  line(0, (1-threshold)*height, width, (1-threshold)*height);
 
   if (!peak) { //Unless we're in a peak
     if (an>threshold) { //If audio over threshold
